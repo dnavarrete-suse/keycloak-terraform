@@ -18,3 +18,5 @@ Then just use it as a normal Terraform project
 ## Troubleshooting
 
 If keycloak does not come up, ssh into the host created by terraform and run a "docker ps" and "docker logs" to see why it failed. 
+
+If the certificates are not in place, or the issue has something to do with them. You will find the proper logs for it under "/var/log/letsencrypt/".
