@@ -1,10 +1,10 @@
 #DigitalOcean API token
 do_token = ""
 
-#Suffix that will get appended to harbor to generate the dns record. Your name for example.
+#Suffix that will get appended to keycloak to generate the dns record. Your name for example.
 instance_suffix = ""
 
-#Password for Harbor, the script runs sed commands, so avoid using characters that may collide with it
+#Password for Keycloak, the script runs sed commands, so avoid using characters that may collide with it
 keycloak_password = ""
 
 #Email needs to be valid, otherwise certbot will fail
@@ -19,7 +19,7 @@ region = "fra1"
 #Instance size
 size = "s-4vcpu-8gb"
 
-#Image to be used. This was tested on "ubuntu-20-04-x64". If you use any other OS, you will need to adapt the commands on the "files/harbor-configuration.sh" configuration file to that particular OS.
+#Image to be used. This was tested on "ubuntu-20-04-x64". If you use any other OS, you will need to adapt the commands on the "files/keycloak-configuration.sh" configuration file to that particular OS.
 image = "ubuntu-20-04-x64"
 
 #DigitalOcean Domain
